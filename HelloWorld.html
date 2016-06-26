@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="./lib/react.js"></script>
+    <script src="./lib/react-dom.js"></script>
+    <script src="./lib/browser.min.js"></script>
+    <script type="text/babel">
+        var Hello = React.createClass({
+            render: function(){
+                return <div style={{color:'orange',fontWeight:'bold',fontSize:'35px'}}>Hello, {this.props.name}</div>;
+            }
+        }); 
+
+        ReactDOM.render(<Hello name = "World" />, document.getElementById('example'));
+
+    </script>
+</head>
+
+<body>
+    <div id="example"></div>
+</body>
+
+</html>
